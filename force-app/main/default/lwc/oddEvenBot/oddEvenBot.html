@@ -1,0 +1,91 @@
+<template>
+    <div class="container">
+        <template if:true={showForm}>
+            <div class="card">
+                <h2>Detail Form</h2>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" value={fullName} placeholder="Please enter your name" oninput={handleNameChange} class="input-field">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" value={email} placeholder="Please enter your email here" oninput={handleEmailChange} class="input-field">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel"  name="phone" value={phone} pattern="[0-9]{10}" placeholder="Enter a valid 10 digit number" oninput={handlePhoneChange} class="input-field">
+                </div>
+                
+                <div class="form-group">
+                    <label for="pin">Pincode</label>
+                    <input type="text"  name="pin" value={pin} placeholder="Please enter your pincode" oninput={handlePinChange} class="input-field">
+                </div>
+                
+                <div class="form-group">
+                    <button class="submit-button" onclick={handleSubmit}>Submit</button>
+                </div>
+                
+            </div>
+        </template>
+
+        <template if:true={showJob}>
+            <div class="card">
+                <h2>Job Enquiry Form</h2>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text"  value={fullName} placeholder="Please enter your name" oninput={handleNameChange} class="input-field">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email"  name="email" placeholder="Please enter your email here" value={email} oninput={handleEmailChange} class="input-field">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel"  name="phone" value={phone} pattern="[0-9]{10}" placeholder="Enter a valid 10 digit number" oninput={handlePhoneChange} class="input-field">
+                </div>
+                
+                <div class="form-group">
+                    <label for="pin">Pincode</label>
+                    <input type="text"  name="pin" value={pin} placeholder="Please enter your pincode" oninput={handlePinChange} class="input-field">
+                </div>
+                
+                <div class="form-group">
+                    <label for="position">Position</label>
+                    <select id="position" name="position" onchange={handlePositionChange} class="input-field" required>
+                        <option value="" disabled selected>Select your position</option>
+                        <option value="Php Developer">Php Developer</option>
+                        <option value="Designer">Designer</option>
+                        <option value="SEO">SEO</option>
+                        <option value="QA Tester">QA Tester</option>
+                        <option value="BDO">BDO</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <button class="submit-button" onclick={handleJobSubmit}>Submit</button>
+                </div>
+                
+            </div>
+        </template>
+
+        <template if:false={showForm}>
+            <lightning-formatted-rich-text value={content}></lightning-formatted-rich-text>
+        </template>
+    </div>
+
+    <template if:true={menuOption}>
+        <div class="assistant-box">
+          <p>Can I assist you with anything else?</p>
+          <ul class="assistant-options">
+              <li><b>1.</b> Yes - Take me back to the Main Menu</li>
+              <li><b>2.</b> No - I’m all set for now <br/></li>
+          </ul>
+      </div>
+       </template>
+</template>

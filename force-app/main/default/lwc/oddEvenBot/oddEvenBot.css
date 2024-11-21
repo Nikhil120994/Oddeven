@@ -1,0 +1,134 @@
+
+:host 
+{
+    display: block;
+    font-family: Georgia;
+    color:black;
+    font-size: 14px;
+    padding: 6px; 
+    border:1px solid rgba(0, 0, 0, 0);
+    border-radius: 12px; 
+    text-shadow: 0px 0.1px;
+    
+}
+
+.container {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 800px;
+}
+
+.card {
+    background-color: #f4f6f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    
+    color: #000000;
+    font-family:Cambria;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.form-group {
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+label {
+    
+    font-weight: bold;
+    font-family:Georgia;
+}
+
+input,select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    font-family:Georgia;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #0070d2; /* Example focus color */
+}
+
+.submit-button
+{
+    background-color: blue !important;
+    font-family:Georgia;
+    border-radius: 4px;
+}
+.lightning-formatted-rich-text
+{
+    
+    font-size:14px;
+    
+
+}
+   
+
+
+
+
+
+
+
+
+.slds-p-around_medium {
+    padding: 10px;
+}
+
+.lightning-input {
+    margin-bottom: 10px;
+    font-family: Georgia;
+    font-size: 14px;
+}
+
+.custom-label
+{
+    color:#212F3D;
+    font-weight: bold;
+    font-family: Georgia;
+    font-size: 14px;
+}
+
+
+
+
+
+
+.assistant-box {
+    
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin: 20px;
+}
+
+/* Styling for the options */
+.assistant-options {
+
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.assistant-options li {
+    margin-bottom: 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+
+
+
+
